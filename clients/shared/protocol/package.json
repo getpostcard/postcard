@@ -1,0 +1,9 @@
+{
+  "name": "@postcard/protocol",
+  "version": "0.0.0",
+  "description": "Wire protocol schema and client bindings (HTTP and serial transports).",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}

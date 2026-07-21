@@ -1,0 +1,7 @@
+{
+  "name": "@postcard/console",
+  "version": "0.0.0",
+  "private": true,
+  "description": "On-device control surface, served by the firmware.",
+  "type": "module"
+}

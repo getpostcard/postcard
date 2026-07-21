@@ -1,0 +1,9 @@
+{
+  "name": "@postcard/render",
+  "version": "0.0.0",
+  "description": "Deterministic render pipeline: board data to device pixels.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}

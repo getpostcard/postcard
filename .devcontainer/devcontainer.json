@@ -1,0 +1,21 @@
+{
+  "name": "postcard",
+  "build": { "dockerfile": "Dockerfile" },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "lts" }
+  },
+  // idf.py is on PATH in interactive shells; scripts must source "$IDF_PATH/export.sh".
+  "postCreateCommand": "bash -c '. \"$IDF_PATH/export.sh\" && idf.py --version && node --version'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "espressif.esp-idf-extension",
+        "ms-vscode.cpptools",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+  // Flash locally: run `esp_rfc2217_server -v -p 4000 <host-serial>` on the host, then
+  // `idf.py -p 'rfc2217://host.docker.internal:4000' flash monitor` in the container.
+}
